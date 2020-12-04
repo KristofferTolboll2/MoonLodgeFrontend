@@ -18,6 +18,15 @@
 		<java.version>11</java.version>
 	</properties>
 
+
+	<repositories>
+		<repository>
+			<id>lsd-repository</id>
+			<name>Internet mirror for rasmuslynge.com</name>
+			<url>http://rasmuslynge.com:8081/repository/internal/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -34,6 +43,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>RELEASE</version>
 			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>dk.cphbusiness.lsd.groupe.moonloodge</groupId>
+			<artifactId>MoonLodgeContract</artifactId>
+			<version>1.0.3</version>
 		</dependency>
 
 

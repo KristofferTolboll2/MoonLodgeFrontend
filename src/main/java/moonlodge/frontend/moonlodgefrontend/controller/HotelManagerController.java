@@ -19,12 +19,13 @@ import java.util.List;
 @RequestMapping("/hotel")
 public class HotelManagerController {
 
+
     @Autowired
     HotelManagerService hotelManagerService;
 
-    @GetMapping("/passport/{id}")
-    public List<BookingDTO> getHello(@PathVariable("id") String id) throws RemoteException {
-        return this.hotelManagerService.findBookings(id);
+    @GetMapping("/hello")
+    public String getHello(){
+        return "hello";
     }
 
     @PostMapping("/booking/")
@@ -89,8 +90,6 @@ public class HotelManagerController {
             this.arrivalIsLate = arrivalIsLate;
         }
     }
-
-
 
 
 }
